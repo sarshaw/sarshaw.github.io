@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"  type="text/css">
+  </head>
+	<!--------------------- body of the page ---------------------------->
+  <body>
+      <!--------------topbar------------->
+	  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="topbar">
+          <a class="navbar-brand" href="index.html">Shawon Sarkar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			  <span class="navbar-toggler-icon"></span></button>
+		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+			  <ul class="navbar-nav ml-auto">
+				  <li class="nav-item active">
+					  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+				  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="research.html">Research</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="pub.html">Publication</a>
+                 </li>
+				 <li class="nav-item">
+                      <a class="nav-link" href="teaching.html">Teaching</a>
+                </li>
+                 <li class="nav-item">
+                      <a class="nav-link" href="service.html">Service</a>
+                 </li>     
+			  </ul>
+		  </div>
+	  </nav>
+	  
+      <!------main container ------>
+	  <div class="container-fluid" id="maincontainer">
+          <div class="row flex-column flex-md-row" id="contentrow">
+              
+              <!-------side nav----->
+              <div class="col-12 col-md-3 col-lg-3 flex-shrink-1 sidebar">
+                  <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between nav-flex-icons">
+                      <li class="nav-item"><img src="images/profile.png" alt="profile image" class="rounded-circle img-fluid" id="profileimg">
+                      </li>
+                      <li class="nav-item d-none d-md-block">
+                          <h6 style="color: #454547">Shawon Sarkar</h6>
+                          <h6 style="color: #454547"><small>PhD Student</small></h6>
+                          <h6 style="color: #454547"><small>iSchool, UW, Seattle</small></h6>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-wrap" href="ss288@gmail.com"><i class="fa fa-envelope"></i><span class="font-weight-lighter">   Email</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-wrap" href="https://twitter.com/koyel2010"><i class="fa fa-twitter"></i> <span class="font-weight-lighter">   Twitter</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-wrap" href="https://www.linkedin.com/in/shawon-sarkar"><i class="fa fa-linkedin"></i> <span class="font-weight-lighter">   LinkedIn</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-wrap" href="https://scholar.google.com/citations?user=yk9FZcgAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i><span class="font-weight-lighter">   Google Scholar</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-wrap" href="https://github.com/sarshaw"><i class="fa fa-github"></i> <span class="font-weight-lighter">   Github</span></a>
+                      </li>
+                  </ul>
+              </div>
+              
+              <!-------right side content----->
+              <div class="col-12 col-md-9 col-lg-9 flex-grow-1 content">
+                  <div class="card h-100">
+                          <!-- Card -->
+                          <div class="card">
+                              <!--Card image-->
+                              <!--<div class="view overlay"><img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap"><a href="#!"><div class="mask rgba-white-slight"></div></a></div>-->
+                              <div class="card-section border rounded p-3">
+                                  <div class="card-header-first card-header-first rounded pb-3">
+                                      <h4 class="card-header-title pl-3 pt-3 text-black-50">About Me</h4>
+                                      <!--<h5 class="card-header-subtitle mb-0 text-white pb-3">Deserve for her own card</h5>
+		                              <p class="mb-0 text-white"><i class="fa fa-calendar mr-2 text-white pb-3"></i>01-05-2018</p>-->
+		                          </div>
+                              <!--Card content-->
+                              <div class="card-body text-justify card-body-first">
+                                  <!--Title<h4 class="card-title">Card title</h4>-->
+                                  <!--Text-->
+                                  <p class="card-text">I am a fourth year PhD student at the <a href="https://ischool.uw.edu/">Information School</a>, <a href="https://www.washington.edu/">University of Washington</a>, Seattle. My advisor is Dr. <a href="http://chiragshah.org/">Chirag Shah</a> and I am a member of <a href="http://infoseeking.org/">InfoSeeking Lab</a> and <a href="https://datalab.ischool.uw.edu/">Data Lab</a> at iSchool.</p>
+                                 <p class="card-text">My research focuses on the intersection of Interactive Information Retrieval, Human-Computer Interaction, and Human-centered AI. I seek to apply the knowledge learned from people interacting with information in search recommendation, user education and intelligent nudging. Through my research, I try to understand how people seek, use and interpret information in both virtual and real-life environment based on their needs and intentions, and other situational contexts using various qualitative and quantitaive research approaches. I aim to use my research findings to increase people's awareness and capability of searching information, and help design and improve information systems and services to alleviate barriers people face while seeking for information.</p>
+                                  <!---<a href="http://nicesnippets.com" target="_blank" class="orange-text d-flex flex-row-reverse p-1">
+		                        	<h5 class="waves-effect waves-light btn btn-primary text-white">Read more<i class="fa fa-angle-double-right ml-2"></i></h5></a>--->
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  <hr>
+                  <hr>
+                  <div class="row row-cols-1 row-cols-md-2" id="cardrow">
+                      <div class="col mb-5">
+                          <div class="card h-100">
+                          <!-- Card -->
+                          <div class="card">
+                              <div class="card-section card-section-second border rounded ml-5 mr-5">
+                                  <div class="card-header card-header-second rounded">
+                                      <h4 class="card-header-title mb-3 mt-1 text-black-50">Research Interests</h4>
+		                          </div>
+                              <!--Card content-->
+                              <div class="card-body text-left card-body-second">
+                                  <ul class="list-group">
+                                  <li class="list-group-item"><i class="fa fa-book"></i> Interactive Information Retrieval</li>
+                                  <li class="list-group-item"><i class="fa fa-book"></i> Information Retreival</li>
+                                  <li class="list-group-item"><i class="fa fa-book"></i> Search and Personalization</li>
+                                  <li class="list-group-item"><i class="fa fa-book"></i> Human-Computer Interaction</li>
+                                  <li class="list-group-item"><i class="fa fa-book"></i> Computational Social Science</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="col mb-5">
+                          <div class="card h-100">
+                          <!-- Card -->
+                          <div class="card">
+                              <div class="card-section card-section-second border rounded ml-5 mr-5">
+                                  <div class="card-header card-header-second rounded">
+                                      <h4 class="card-header-title mb-3 mt-1 text-black-50">Education</h4>
+		                          </div>
+                              <!--Card content-->
+                              <div class="card-body text-left card-body-second">
+                                  <ul class="list-group">
+                                  <li class="list-group-item"><i class="fa fa-graduation-cap"></i> M.I. in Data Science, 2017<br><a href="https://comminfo.rutgers.edu/">SC&I</a>, <a href="https://www.rutgers.edu/">Rutgers, The State University of New Jersey</a>, New brunswick, USA</li>
+                                  <li class="list-group-item"><i class="fa fa-graduation-cap"></i> M.A. in English Literature, 2009<br><a href="http://www.rbu.ac.in/">Rabindra Bharati University</a>, Kolkata, India</li>
+                                  <li class="list-group-item"><i class="fa fa-graduation-cap"></i> B.A. in English Language and Literature, 2006<br><a href="https://www.caluniv.ac.in/">University of Calcutta</a>, Kolkata, India</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="col-12 col-md-9 col-lg-12">
+                          <div class="card h-100">
+                          <!-- Card -->
+                          <div class="card">
+                              <!--Card image-->
+                              <!--<div class="view overlay">
+                                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+                                  <a href="#!"><div class="mask rgba-white-slight"></div></a>
+                              </div>-->
+                              <div class="card-section card-section-second border rounded ml-5 mr-5">
+                                  <div class="card-header card-header-second rounded">
+                                      <h4 class="card-header-title mb-3 mt-1 text-black-50">Latest Updates</h4>
+                                      <!--<h5 class="card-header-subtitle mb-0 text-white pb-3">Deserve for her own card</h5>
+		                              <p class="mb-0 text-white"><i class="fa fa-calendar mr-2 text-white pb-3"></i>01-05-2018</p>-->
+		                          </div>
+                              <!--Card content-->
+                              <div class="card-body text-justify card-body-second">
+                                  <!--Title<h4 class="card-title">Card title</h4>-->
+                                  <!--Text-->
+                                  <ul class="list-unstyled">
+                                    <li class="media">
+                                    <img class="d-flex mr-3" src="images/chiir2021.jpg" alt="chiir2021 image" width="80" height="80">
+                                  <div class="media-body">
+                                    <p><strong>September, 2020:</strong> I will be serving as a Program Committee member for <a href="https://acm-chiir.github.io/chiir2021/index.html">ACM CHIIR 2021</a>.</p>
+                                  </div>
+                                   </li>
+                                   <li class="media">
+                                    <img class="d-flex mr-3" src="images/recsys2020.png" alt="recsys image" width="80" height="80">
+                                  <div class="media-body">
+                                      <p><strong>September, 2020:</strong> I will be serving as a volunteer for <a href="https://recsys.acm.org/recsys20/">ACM RecSys 2020</a>.</p>
+                                  </div>
+                                   </li>
+                                   <li class="media">
+                                    <img class="d-flex mr-3" src="images/asist2020.jpg" alt="asist image" width="80" height="80">
+                                    <div class="media-body">
+                                        <p><strong>August, 2020:</strong> I served as a reviewer for <a href="https://www.asist.org/sig/siguse/sig-use-annual-symposium/">ASIS&T AM 2020 SIG USE Symposium</a>.</p>
+                                    </div>
+                                   </li>
+                                <li class="media">
+                                    <img class="d-flex mr-3" src="images/chiir2020.jpg" alt="chiir image" width="80" height="80">
+                                    <div class="media-body">
+                                        <p><strong>March, 2020:</strong> Full paper <i>Identifying and Predicting the States of Complex Search Tasks</i> accepted by <a href="https://sigir.org/chiir2020/">ACM CHIIR 2020</a>.</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="images/ipnm.png" alt="ipnm image" width="80" height="80" class="d-flex mr-3">
+                                    <div class="media-body">
+                                        <p><strong>March, 2020:</strong> Our research paper, <i>Implicit information needs as explicit problems, help, and behavioral signals</i> by myself, Matthew Mitsui (Rutgers iSchool), Jiqun Liu (Rutgers iSchool), and Chirag Shah (UW iSchool) has published in <a href="https://www.sciencedirect.com/journal/information-processing-and-management/vol/57/issue/2">Vol. 57, Issue 2 of Information Processing and Management</a>.</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <img src="images/uw.png" alt="uw image" width="80" height="80" class="d-flex mr-3">
+                                    <div class="media-body">
+                                        <p><strong>September, 2019:</strong> Transferred from Rutgers University <a href="https://comminfo.rutgers.edu/graduate-and-professional-programs/phd-program">iSchool</a> PhD program to University of Washington <a href="https://ischool.uw.edu/programs/phd">iSchool</a> PhD.</p>
+                                  </div>
+                            </li>
+                          </ul>
+                                  <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="http://nicesnippets.com" target="_blank" class="orange-text d-flex flex-row-reverse p-1"><h5 class="waves-effect waves-light btn btn-primary text-white">Read more<i class="fa fa-angle-double-right ml-2"></i></h5></a>-->
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+              
+        <footer class="footer">&copy; Copyright 2020 Shawon Sarkar</footer> 
+        </div>
+      </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
