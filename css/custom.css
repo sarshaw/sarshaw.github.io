@@ -42,7 +42,7 @@ p {
     background-color: #F4F4F4;
     margin: 0;
     min-height: 100%;
-    margin-top: 55px;
+    margin-top: 0px;
     padding: 0;
 }
 
@@ -135,7 +135,8 @@ div.content {
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 100%;
-    padding-top: 60px;
+    padding:0;
+    padding-top: 0px;
     height: auto;
     position: relative;
   }
@@ -245,6 +246,26 @@ div.content {
   background: #F1F0F0;
   color: #446DEB;
 }
+.fa-download {
+  background: #F1F0F0;
+  color: #062993;
+}
+.fa-user-circle {
+  background: white;
+  color: #020202;
+}
+.fa-user-circle-o {
+  background: white;
+  color: #020202;
+}
+.fa-book {
+  background: white;
+  color: #020202;
+}
+.fa-group {
+  background: white;
+  color: #020202;
+}
 .footer {
     font-size: small;
     font-family: "Open Sans" sans-serif;
@@ -259,3 +280,11 @@ div.content {
     padding-left: 25%;
     position:static;
 }
+
+.scroll {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.media-body p {
+    margin-top: 1rem;
