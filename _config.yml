@@ -19,7 +19,7 @@ url                      : https://sarshaw.github.io # The base hostname & proto
 # url: "http://localhost:4000"  # Uncomment this for local development
 baseurl: ""   # keep empty for GitHub Pages
 # baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "saeshaw/sarshaw.github.io"
+repository               : "sarshaw/sarshaw.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
