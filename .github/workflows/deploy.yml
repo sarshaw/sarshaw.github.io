@@ -40,9 +40,13 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y imagemagick libmagickwand-dev
       
-      - name: Install dependencies
+      - name: Install Ruby dependencies
         run: |
+          bundle config set --local path 'vendor/bundle'
           bundle install
+      
+      - name: Install Node dependencies
+        run: |
           npm ci
       
       - name: Setup Pages
@@ -51,7 +55,7 @@ jobs:
       
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build
+          bundle exec jekyll build --verbose
         env:
           JEKYLL_ENV: production
       
