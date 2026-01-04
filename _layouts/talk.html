@@ -52,8 +52,6 @@ layout: default
         {% include page__taxonomy.html %}
       </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
-
       {% include post_pagination.html %}
     </div>
 
@@ -70,7 +68,14 @@ layout: default
       {% endif %}
       <div class="grid__wrapper">
         {% for post in site.related_posts limit:4 %}
-          {% include archive-single.html type="grid" %}
+          <div class="list__item">
+            <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+              <h2 class="archive__item-title" itemprop="headline">
+                <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+              </h2>
+              {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+            </article>
+          </div>
         {% endfor %}
       </div>
     </div>

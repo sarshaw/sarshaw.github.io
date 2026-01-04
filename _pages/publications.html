@@ -23,12 +23,28 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      <div class="list__item">
+        <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+          <h2 class="archive__item-title" itemprop="headline">
+            <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+          </h2>
+          {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html }}</p>{% endif %}
+          {% if post.venue %}<p class="archive__item-meta">Published in <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>{% endif %}
+        </article>
+      </div>
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline">
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+        </h2>
+        {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html }}</p>{% endif %}
+        {% if post.venue %}<p class="archive__item-meta">Published in <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>{% endif %}
+      </article>
+    </div>
   {% endfor %}
 {% endif %}
 
