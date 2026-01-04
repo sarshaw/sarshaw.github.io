@@ -47,7 +47,7 @@ jobs:
       
       - name: Install Node dependencies
         run: |
-          npm install
+          npm ci
       
       - name: Setup Pages
         id: pages
