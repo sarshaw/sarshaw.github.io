@@ -9,7 +9,7 @@ author_profile: true
 
 {% for post in site.teaching reversed %}
   <div class="list__item">
-    <article class="archive__item" itemscope itemscope itemtype="http://schema.org/CreativeWork">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       <h2 class="archive__item-title" itemprop="headline">
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
       </h2>
