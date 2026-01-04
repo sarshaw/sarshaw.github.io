@@ -54,7 +54,7 @@ jobs:
       
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build --trace
+          bundle exec jekyll build --trace 2>&1 | tee build.log || (cat build.log && exit 1)
         env:
           JEKYLL_ENV: production
       
