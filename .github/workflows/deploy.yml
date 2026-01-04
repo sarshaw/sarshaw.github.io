@@ -42,7 +42,6 @@ jobs:
       
       - name: Install Ruby dependencies
         run: |
-          bundle config set --local path 'vendor/bundle'
           bundle install
       
       - name: Install Node dependencies
@@ -55,7 +54,7 @@ jobs:
       
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build --verbose
+          bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
       
