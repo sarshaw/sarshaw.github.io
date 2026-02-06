@@ -1,0 +1,61 @@
+# Publication types with colors for badges
+"Journal Articles (Peer-Reviewed)":
+  display: "Journal Articles (Peer-Reviewed)"
+  color: "#3B4CCA"
+  short: "Journal Article"
+
+"Refereed Conference Papers":
+  display: "Refereed Conference Papers"
+  color: "#3B4CCA"
+  short: "Conference Paper"
+
+"Book Chapters (Peer Reviewed/Invited)":
+  display: "Book Chapters (Peer Reviewed/Invited)"
+  color: "#3B4CCA"
+  short: "Book Chapter"
+
+"Workshop Papers":
+  display: "Workshop Papers"
+  color: "#9AA4B2"
+  short: "Workshop Paper"
+
+"Extended Abstracts & Non-Archival Conference Papers":
+  display: "Extended Abstracts & Non-Archival Conference Papers"
+  color: "#9AA4B2"
+  short: "Extended Abstract"
+
+"Extended Abstracts & Non-Archival Conference Papers":
+  display: "Extended Abstracts & Non-Archival Conference Papers"
+  color: "#9AA4B2"
+  short: "Non-Archival Conference Paper"
+
+"Doctoral Consortium Papers":
+  display: "Doctoral Consortium Papers"
+  color: "#9AA4B2"
+  short: "Doctoral Consortium Paper"
+
+"Conference Posters":
+  display: "Conference Posters"
+  color: "#9AA4B2"
+  short: "Poster"
+
+"Conference Demos":
+  display: "Conference Demos"
+  color: "#9AA4B2"
+  short: "Demo"
+
+"Technical Reports & White Papers":
+  display: "Technical Reports & White Papers"
+  color: "#CED4DA"
+  short: "Technical Report"
+
+"Patents":
+  display: "Patents"
+  color: "#C9A227"
+  short: "Patent"
+
+
+"Dissertation":
+  display: "Dissertation"
+  color: "#C9A227"
+  short: "Dissertation"

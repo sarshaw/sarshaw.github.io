@@ -1,0 +1,31 @@
+# Talk/Presentation types with display names and colors
+
+"Invited Talks":
+  display: "Invited Talks"
+  color: "#3B4CCA"
+  short: "Invited Talk"
+
+"Invited Webinars":
+  display: "Invited Webinars"
+  color: "#3B4CCA"
+  short: "Invited Webinar"
+
+"Keynotes":
+  display: "Keynotes"
+  color: "#C9A227"
+  short: "Keynote"
+
+"Panels":
+  display: "Panels"
+  color: "#CED4DA"
+  short: "Panel"
+
+"Workshops Organized":
+  display: "Workshops Organized"
+  color: "#CED4DA"
+  short: "Workshop Organized"
+
+"Conference Presentations":
+  display: "Conference Presentations"
+  color: "#9AA4B2"
+  short: "Conference Presentation"

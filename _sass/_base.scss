@@ -201,7 +201,10 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--global-text-color);
 
     p {
       display: inline-block;
@@ -409,7 +412,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Social (bottom)
+// Social (bottom) – used on non-about pages or when social is not in profile
 
 .social {
   text-align: center;
@@ -452,6 +455,55 @@ ul.task-list input[type="checkbox"] {
 
   .contact-note {
     font-size: 0.8rem;
+  }
+}
+
+// Social in profile (about page) – under profile image and address, smaller icons
+.profile .social.profile-social {
+  text-align: left;
+  margin-top: 0.5rem;
+
+  .contact-icons {
+    font-size: 1.15rem;
+
+    a {
+      margin-right: 0.5rem;
+
+      img {
+        width: 1.15rem;
+        height: 1.15rem;
+        margin-bottom: 0;
+      }
+
+      svg {
+        width: 1.15rem;
+        height: 1.15rem;
+        margin-bottom: 0;
+
+        image {
+          width: 1.15rem;
+          height: 1.15rem;
+        }
+      }
+
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+
+  .contact-note {
+    font-size: 0.75rem;
+    margin-top: 0.35rem;
   }
 }
 

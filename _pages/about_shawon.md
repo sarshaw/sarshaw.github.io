@@ -1,31 +1,3 @@
----
-layout: about
-title: about
-permalink: /
-#subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: Shawon.jpg
-  image_circular: true # crops the image to make it circular
-  # more_info: >
-  #   <p>Bellevue, Washington</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
----
-
-
 I am a human-centered research scientist studying how people understand, interpret, and use information to complete tasks - and how systems can be designed to support learning and agency rather than replace human judgment.
 
 My work lies at the intersection of Human-Computer Interaction (HCI), interactive information retrieval (IIR), AI, and learning sciences. Across all my research, I ask: 
@@ -38,6 +10,6 @@ Methodologically, I combine qualitative approaches with quantitative analysis. I
 
 I have published in venues including ACM SIGIR, CHIIR, WSDM, ICTIR, and Information Processing & Management; hold a U.S. patent; and serve as Co-PI on grants from the National Science Foundation (NSF) and Institute of Education Sciences (IES).
 
-<!-- **Research Interests**
+**Research Interests**
 
-Human-Centered AI | HCI & Human Factors | Information Behavior & Sensemaking | LLM Evaluation & Alignment | Task-Aware Information Systems | Mixed-Methods Research | AI Literacy & Capacity Building | Responsible AI | Learning Sciences & Educational Technology -->
+Human-Centered AI | HCI & Human Factors | Information Behavior & Sensemaking | LLM Evaluation & Alignment | Task-Aware Information Systems | Mixed-Methods Research | AI Literacy & Capacity Building | Responsible AI | Learning Sciences & Educational Technology
