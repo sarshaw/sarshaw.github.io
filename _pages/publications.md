@@ -165,10 +165,6 @@ document.addEventListener("DOMContentLoaded", function() {
       window.originalPublicationsHTML = container.innerHTML;
     } else {
       container.innerHTML = window.originalPublicationsHTML;
-      // Re-initialize abstract toggle after restoring HTML
-      setTimeout(() => {
-        initializeAbstractToggle();
-      }, 50);
     }
     
     const restoredPubs = Array.from(document.querySelectorAll('#publications-container .bibliography > li'));
@@ -230,10 +226,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     container.innerHTML = newHTML;
-    // Re-initialize abstract toggle after reorganizing
-    setTimeout(() => {
-      initializeAbstractToggle();
-    }, 50);
   }
 
   // Show topic view (grouped by theme)
@@ -296,39 +288,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     container.innerHTML = newHTML;
-    // Re-initialize abstract toggle after reorganizing
-    setTimeout(() => {
-      initializeAbstractToggle();
-    }, 50);
   }
-
-  // Initialize abstract toggle functionality
-  function initializeAbstractToggle() {
-    // Remove any existing event listeners by cloning and replacing
-    document.querySelectorAll('a.abstract.btn').forEach(btn => {
-      // Remove old listeners by replacing the element
-      const newBtn = btn.cloneNode(true);
-      btn.parentNode.replaceChild(newBtn, btn);
-      
-      // Add click handler
-      newBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        const entry = this.closest('li');
-        if (!entry) return;
-        
-        const abstractDiv = entry.querySelector('.abstract.hidden');
-        if (abstractDiv) {
-          abstractDiv.classList.toggle('open');
-        }
-        // Close other open abstracts/awards/bibtex in same entry
-        entry.querySelectorAll('.award.hidden.open, .bibtex.hidden.open').forEach(el => {
-          el.classList.remove('open');
-        });
-      });
-    });
-  }
-
 
   // Organize talks section
   function organizeTalks() {
@@ -444,28 +404,10 @@ document.addEventListener("DOMContentLoaded", function() {
       
       talksContainer.innerHTML = talksHTML;
     }
-    // Re-initialize abstract toggle for talks
-    setTimeout(() => {
-      initializeAbstractToggle();
-    }, 50);
   }
 
   // Initialize
   organizeTalks();
-  
-  // Initialize abstract toggle - with delay to ensure DOM is ready
-  setTimeout(() => {
-    initializeAbstractToggle();
-  }, 100);
-  
-  // Also re-initialize after any DOM changes
-  const originalReorganizeView = reorganizeView;
-  reorganizeView = function() {
-    originalReorganizeView();
-    setTimeout(() => {
-      initializeAbstractToggle();
-    }, 100);
-  };
 });
 </script>
 
@@ -896,6 +838,45 @@ ol.unloaded {
 .publications-main .abstract.hidden p {
   margin: 0;
   padding: 0;
+}
+
+/* BibTeX expand panel — same treatment as abstract on publications page */
+.publications-main .bibtex.hidden {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.publications-main .bibtex.hidden.open {
+  max-height: 2000px;
+  opacity: 1;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-left: 3px solid #999;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  display: block;
+}
+
+.publications-main .bibtex.hidden .bibtex-actions {
+  margin: 0 0 0.75rem;
+}
+
+.publications-main .bibtex.hidden .bibtex-actions .bibtex-download {
+  border: 1px solid #ddd !important;
+  color: #666 !important;
+  background: #f5f5f5 !important;
+  text-transform: none !important;
+}
+
+.publications-main .bibtex.hidden .bibtex-actions .bibtex-download:hover {
+  border-color: #999;
+  color: #333;
+  background: #e8e8e8;
 }
 
 /* Responsive adjustments */

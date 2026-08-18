@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post about-page">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -11,49 +11,96 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
+    {% if page.profile %}
+      {%- assign cv_pdf = page.profile.cv_pdf | default: page.profile.cv_url -%}
+      {%- assign resume_pdf = page.profile.resume_pdf | default: page.profile.resume_url -%}
+      {% if cv_pdf or resume_pdf %}
+      <p class="about-cv-links" aria-label="CV and resume PDFs">
+        <span class="about-cv-bracket">[</span>
+        {%- if cv_pdf -%}
+          {%- if cv_pdf contains '://' -%}
+            <a href="{{ cv_pdf }}" target="_blank" rel="noopener noreferrer">cv</a>
+          {%- elsif cv_pdf contains 'assets/pdf' -%}
+            <a href="{{ cv_pdf | relative_url }}" target="_blank" rel="noopener noreferrer">cv</a>
+          {%- else -%}
+            <a href="{{ cv_pdf | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener noreferrer">cv</a>
+          {%- endif -%}
+        {%- endif -%}
+        {%- if cv_pdf and resume_pdf -%}
+          <span class="about-cv-sep">, </span>
+        {%- endif -%}
+        {%- if resume_pdf -%}
+          {%- if resume_pdf contains '://' -%}
+            <a href="{{ resume_pdf }}" target="_blank" rel="noopener noreferrer">resume</a>
+          {%- elsif resume_pdf contains 'assets/pdf' -%}
+            <a href="{{ resume_pdf | relative_url }}" target="_blank" rel="noopener noreferrer">resume</a>
+          {%- else -%}
+            <a href="{{ resume_pdf | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener noreferrer">resume</a>
+          {%- endif -%}
+        {%- endif -%}
+        <span class="about-cv-bracket">]</span>
+      </p>
+      {% endif %}
+    {% endif %}
     <p class="desc">{{ page.subtitle }}</p>
   </header>
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true avoid_scaling=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-        {% if page.social %}
-          <div class="social profile-social">
-            <div class="contact-icons">{% include social.liquid %}</div>
-            {% if site.contact_note %}
-              <div class="contact-note">{{ site.contact_note }}</div>
+      <div class="about-grid">
+        <!-- Left: bio content -->
+        <div class="about-content">
+          {{ content }}
+        </div>
+
+        <!-- Right: sidebar (image, social, CV, news) -->
+        <div class="about-sidebar">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
-          </div>
-        {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
+      30vw, 95vw"{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true avoid_scaling=true
+            %}
+          {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+          {% if page.social %}
+            <div class="social profile-social">
+              <div class="contact-icons">{% include social.liquid %}</div>
+              {% if site.contact_note %}
+                <div class="contact-note">{{ site.contact_note }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if page.announcements and page.announcements.enabled %}
+            <div class="profile-news">
+              <h2 class="profile-news-title">
+                <a href="{{ '/news/' | relative_url }}" style="color: inherit">updates</a>
+              </h2>
+              {% include news.liquid limit=true %}
+            </div>
+          {% endif %}
+        </div>
       </div>
-    {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+      <hr class="about-section-divider">
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+    {% else %}
+      <div class="clearfix">{{ content }}</div>
+      {% if page.announcements and page.announcements.enabled %}
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      {% endif %}
     {% endif %}
 
     <!-- Latest posts -->

@@ -1,19 +1,21 @@
 # Research Themes/Topics with colors for publication badges
 
+# Human-Computer Interaction / Human Information Interaction -- covers the search, task modeling, source selection, and sensemaking work that forms your foundation.
+
+#Information Retrieval and Recommender Systems -- covers the task-aware retrieval systems, the TGNN recommendation paper, search session modeling, and the patent.
+
+#AI in Education (AIED) -- covers the entire K-12 cluster: GenAI use, lesson plan evaluation, rubric generation, automated grading, co-design with teachers.
+
+#Responsible AI and Human-AI Collaboration -- covers the co-design papers, the COLM 2026 cognitive bias paper, the equity/Indigenous work, and the practitioner-facing AI literacy framing.
+
 "AI in Education":
-  color: "#8E90C8"
+  color: "#A95C68"
 
-"Search / Recommendation":
-  color: "#8FA8C8"
+"Human-Centered AI":
+  color: "#A95C68"
 
-"AI / ML":
-  color: "#C7A29A"
+"Information Retrieval":
+  color: "#954535"
 
-"Interactive Information Seeking & Retrieval":
-  color: "#D6CBA6"
-
-"Indigenous Studies":
-  color: "#C9A0B5"
-
-"HCI":
-  color: "#9FBFB3"
+"Human-Computer Interaction/Human-Information Interaction":
+  color: "#915F6D"

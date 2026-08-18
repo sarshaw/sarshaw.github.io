@@ -2,12 +2,12 @@
 
 "Invited Talks":
   display: "Invited Talks"
-  color: "#3B4CCA"
+  color: "#71797E"
   short: "Invited Talk"
 
 "Invited Webinars":
   display: "Invited Webinars"
-  color: "#3B4CCA"
+  color: "#848884"
   short: "Invited Webinar"
 
 "Keynotes":
@@ -17,15 +17,15 @@
 
 "Panels":
   display: "Panels"
-  color: "#CED4DA"
+  color: "#C0C0C0"
   short: "Panel"
 
 "Workshops Organized":
   display: "Workshops Organized"
-  color: "#CED4DA"
+  color: "#899499"
   short: "Workshop Organized"
 
 "Conference Presentations":
   display: "Conference Presentations"
-  color: "#9AA4B2"
+  color: "#B2BEB5"
   short: "Conference Presentation"

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1100" height="380" rx="12" fill="url(#bg4)"/>
+  
+  <text x="550" y="38" text-anchor="middle" fill="#94a3b8" font-size="11" letter-spacing="3">CODEBOOK DEVELOPMENT: FROM 40 CRITERIA TO 10 METRICS</text>
+  
+  <!-- Funnel stages -->
+  <!-- Stage 1: Wide -->
+  <rect x="60" y="70" width="200" height="80" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="160" y="95" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="bold">~40 Criteria</text>
+  <text x="160" y="115" text-anchor="middle" fill="#94a3b8" font-size="10">Literature review +</text>
+  <text x="160" y="130" text-anchor="middle" fill="#94a3b8" font-size="10">Educator interviews</text>
+  
+  <!-- Arrow -->
+  <path d="M260,110 L310,110" stroke="#475569" stroke-width="1.5" fill="none" marker-end="url(#arr4)"/>
+  <defs><marker id="arr4" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#475569"/></marker></defs>
+  
+  <!-- Stage 2 -->
+  <rect x="320" y="70" width="200" height="80" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="420" y="92" text-anchor="middle" fill="#8b5cf6" font-size="12" font-weight="bold">Card Sorting</text>
+  <text x="420" y="112" text-anchor="middle" fill="#94a3b8" font-size="10">Collaborative sessions</text>
+  <text x="420" y="127" text-anchor="middle" fill="#94a3b8" font-size="10">with educators + researchers</text>
+  <text x="420" y="142" text-anchor="middle" fill="#64748b" font-size="9">Affinity diagramming</text>
+  
+  <!-- Arrow -->
+  <path d="M520,110 L570,110" stroke="#475569" stroke-width="1.5" fill="none" marker-end="url(#arr4)"/>
+  
+  <!-- Stage 3 -->
+  <rect x="580" y="70" width="200" height="80" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="1"/>
+  <text x="680" y="92" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="bold">Consolidation</text>
+  <text x="680" y="112" text-anchor="middle" fill="#94a3b8" font-size="10">Merge overlapping criteria</text>
+  <text x="680" y="127" text-anchor="middle" fill="#94a3b8" font-size="10">Remove unreliable items</text>
+  <text x="680" y="142" text-anchor="middle" fill="#64748b" font-size="9">Structured discussions</text>
+  
+  <!-- Arrow -->
+  <path d="M780,110 L830,110" stroke="#475569" stroke-width="1.5" fill="none" marker-end="url(#arr4)"/>
+  
+  <!-- Stage 4: Final -->
+  <rect x="840" y="60" width="220" height="100" rx="6" fill="#1e293b" stroke="#0d9488" stroke-width="2"/>
+  <text x="950" y="88" text-anchor="middle" fill="#0d9488" font-size="14" font-weight="bold">10 Metrics</text>
+  <text x="950" y="108" text-anchor="middle" fill="#cbd5e1" font-size="10">Operational definitions</text>
+  <text x="950" y="123" text-anchor="middle" fill="#cbd5e1" font-size="10">High/Medium/Low examples</text>
+  <text x="950" y="138" text-anchor="middle" fill="#cbd5e1" font-size="10">Concrete scoring anchors</text>
+  <text x="950" y="153" text-anchor="middle" fill="#64748b" font-size="9">Gold standard codebook</text>
+
+  <!-- The 10 metrics listed -->
+  <rect x="60" y="185" width="1000" height="170" rx="8" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+  <text x="550" y="210" text-anchor="middle" fill="#0d9488" font-size="11" font-weight="bold" letter-spacing="2">THE 10 QUALITY DIMENSIONS</text>
+  
+  <!-- Row 1 -->
+  <rect x="85" y="225" width="175" height="28" rx="4" fill="#0f172a"/>
+  <text x="172" y="244" text-anchor="middle" fill="#cbd5e1" font-size="10">Standards Alignment</text>
+  
+  <rect x="275" y="225" width="175" height="28" rx="4" fill="#0f172a"/>
+  <text x="362" y="244" text-anchor="middle" fill="#cbd5e1" font-size="10">Warm-up Relevance</text>
+  
+  <rect x="465" y="225" width="175" height="28" rx="4" fill="#0f172a"/>
+  <text x="552" y="244" text-anchor="middle" fill="#cbd5e1" font-size="10">Instructional Rigor</text>
+  
+  <rect x="655" y="225" width="175" height="28" rx="4" fill="#0f172a"/>
+  <text x="742" y="244" text-anchor="middle" fill="#cbd5e1" font-size="10">Cognitive Demand</text>
+  
+  <rect x="845" y="225" width="190" height="28" rx="4" fill="#0f172a"/>
+  <text x="940" y="244" text-anchor="middle" fill="#cbd5e1" font-size="10">Student Discourse</text>
+  
+  <!-- Row 2 -->
+  <rect x="85" y="265" width="175" height="28" rx="4" fill="#0f172a"/>
+  <text x="172" y="284" text-anchor="middle" fill="#cbd5e1" font-size="10">Scaffolding</text>
+  
+  <rect x="275" y="265" width="175" height="28" rx="4" fill="#0f172a"/>
+  <text x="362" y="284" text-anchor="middle" fill="#cbd5e1" font-size="10">Real-world Connection</text>
+  
+  <rect x="465" y="265" width="175" height="28" rx="4" fill="#0f172a"/>
+  <text x="552" y="284" text-anchor="middle" fill="#cbd5e1" font-size="10">Assessment Quality</text>
+  
+  <rect x="655" y="265" width="175" height="28" rx="4" fill="#0f172a"/>
+  <text x="742" y="284" text-anchor="middle" fill="#cbd5e1" font-size="10">Differentiation</text>
+  
+  <rect x="845" y="265" width="190" height="28" rx="4" fill="#0f172a"/>
+  <text x="940" y="284" text-anchor="middle" fill="#cbd5e1" font-size="10">Cool-down Diagnostics</text>
+
+  <!-- Bottom note -->
+  <text x="550" y="330" text-anchor="middle" fill="#64748b" font-size="10">Each metric includes precise operational definitions with concrete examples at multiple performance levels.</text>
+  <text x="550" y="348" text-anchor="middle" fill="#64748b" font-size="10">Annotators highlighted specific text spans and provided written rationales for every score.</text>
+</svg>

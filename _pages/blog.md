@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default ## do not need
 permalink: /blog/
 title: blog
 nav: false

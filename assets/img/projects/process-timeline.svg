@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <rect width="1100" height="320" rx="12" fill="url(#grad1)"/>
+  
+  <text x="550" y="38" text-anchor="middle" fill="#94a3b8" font-size="11" letter-spacing="3" text-transform="uppercase">RESEARCH PROCESS</text>
+  
+  <!-- Connection line -->
+  <line x1="130" y1="120" x2="970" y2="120" stroke="#334155" stroke-width="2" stroke-dasharray="6,4"/>
+  
+  <!-- Phase 1 -->
+  <circle cx="130" cy="120" r="28" fill="#0f766e" opacity="0.9" filter="url(#shadow)"/>
+  <text x="130" y="125" text-anchor="middle" fill="white" font-size="14" font-weight="bold">1</text>
+  <text x="130" y="160" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Problem</text>
+  <text x="130" y="178" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Framing</text>
+  <text x="130" y="205" text-anchor="middle" fill="#94a3b8" font-size="10">Literature review</text>
+  <text x="130" y="220" text-anchor="middle" fill="#94a3b8" font-size="10">Educator interviews</text>
+  <text x="130" y="235" text-anchor="middle" fill="#94a3b8" font-size="10">Focus groups</text>
+  
+  <!-- Phase 2 -->
+  <circle cx="340" cy="120" r="28" fill="#0f766e" opacity="0.9" filter="url(#shadow)"/>
+  <text x="340" y="125" text-anchor="middle" fill="white" font-size="14" font-weight="bold">2</text>
+  <text x="340" y="160" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Codebook &amp;</text>
+  <text x="340" y="178" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Gold Standard</text>
+  <text x="340" y="205" text-anchor="middle" fill="#94a3b8" font-size="10">40 criteria → 10 metrics</text>
+  <text x="340" y="220" text-anchor="middle" fill="#94a3b8" font-size="10">Card sorting</text>
+  <text x="340" y="235" text-anchor="middle" fill="#94a3b8" font-size="10">Annotation task design</text>
+  
+  <!-- Phase 3 -->
+  <circle cx="550" cy="120" r="28" fill="#0f766e" opacity="0.9" filter="url(#shadow)"/>
+  <text x="550" y="125" text-anchor="middle" fill="white" font-size="14" font-weight="bold">3</text>
+  <text x="550" y="160" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Pairwise</text>
+  <text x="550" y="178" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Evaluation</text>
+  <text x="550" y="205" text-anchor="middle" fill="#94a3b8" font-size="10">529 pairs evaluated</text>
+  <text x="550" y="220" text-anchor="middle" fill="#94a3b8" font-size="10">Blinded comparison</text>
+  <text x="550" y="235" text-anchor="middle" fill="#94a3b8" font-size="10">5-month data collection</text>
+  
+  <!-- Phase 4 -->
+  <circle cx="760" cy="120" r="28" fill="#0f766e" opacity="0.9" filter="url(#shadow)"/>
+  <text x="760" y="125" text-anchor="middle" fill="white" font-size="14" font-weight="bold">4</text>
+  <text x="760" y="160" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Mixed-Methods</text>
+  <text x="760" y="178" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Analysis</text>
+  <text x="760" y="205" text-anchor="middle" fill="#94a3b8" font-size="10">Bootstrapping (1000×)</text>
+  <text x="760" y="220" text-anchor="middle" fill="#94a3b8" font-size="10">LDA topic modeling</text>
+  <text x="760" y="235" text-anchor="middle" fill="#94a3b8" font-size="10">Thematic coding</text>
+  
+  <!-- Phase 5 -->
+  <circle cx="970" cy="120" r="28" fill="#0f766e" opacity="0.9" filter="url(#shadow)"/>
+  <text x="970" y="125" text-anchor="middle" fill="white" font-size="14" font-weight="bold">5</text>
+  <text x="970" y="160" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Product</text>
+  <text x="970" y="178" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Impact</text>
+  <text x="970" y="205" text-anchor="middle" fill="#94a3b8" font-size="10">Design philosophy shift</text>
+  <text x="970" y="220" text-anchor="middle" fill="#94a3b8" font-size="10">Automated classifier</text>
+  <text x="970" y="235" text-anchor="middle" fill="#94a3b8" font-size="10">Real-time quality scores</text>
+  
+  <!-- Arrows -->
+  <polygon points="225,120 215,113 215,127" fill="#334155"/>
+  <polygon points="435,120 425,113 425,127" fill="#334155"/>
+  <polygon points="645,120 635,113 635,127" fill="#334155"/>
+  <polygon points="855,120 845,113 845,127" fill="#334155"/>
+
+  <!-- Timeline bar -->
+  <rect x="60" y="275" width="980" height="24" rx="12" fill="#1e293b"/>
+  <rect x="60" y="275" width="180" height="24" rx="12" fill="#134e4a" opacity="0.6"/>
+  <rect x="240" y="275" width="180" height="24" rx="0" fill="#134e4a" opacity="0.45"/>
+  <rect x="420" y="275" width="280" height="24" rx="0" fill="#134e4a" opacity="0.3"/>
+  <rect x="700" y="275" width="180" height="24" rx="0" fill="#134e4a" opacity="0.2"/>
+  <rect x="880" y="275" width="160" height="24" rx="12" fill="#134e4a" opacity="0.15"/>
+  <text x="150" y="291" text-anchor="middle" fill="#94a3b8" font-size="9">Fall 2023</text>
+  <text x="330" y="291" text-anchor="middle" fill="#94a3b8" font-size="9">Winter 2024</text>
+  <text x="550" y="291" text-anchor="middle" fill="#94a3b8" font-size="9">Mar–Jul 2024</text>
+  <text x="790" y="291" text-anchor="middle" fill="#94a3b8" font-size="9">Fall 2024</text>
+  <text x="960" y="291" text-anchor="middle" fill="#94a3b8" font-size="9">2025</text>
+</svg>

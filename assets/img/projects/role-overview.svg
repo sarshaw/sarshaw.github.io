@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 160" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1100" height="160" rx="12" fill="url(#bg6)"/>
+  
+  <!-- Four info columns -->
+  <text x="150" y="40" text-anchor="middle" fill="#64748b" font-size="10" letter-spacing="2">ROLE</text>
+  <text x="150" y="65" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Lead Researcher</text>
+  <text x="150" y="85" text-anchor="middle" fill="#94a3b8" font-size="10">Study design, data collection,</text>
+  <text x="150" y="100" text-anchor="middle" fill="#94a3b8" font-size="10">analysis, stakeholder communication</text>
+  
+  <line x1="300" y1="25" x2="300" y2="140" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="430" y="40" text-anchor="middle" fill="#64748b" font-size="10" letter-spacing="2">TIMELINE</text>
+  <text x="430" y="65" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">2023 - 2025</text>
+  <text x="430" y="85" text-anchor="middle" fill="#94a3b8" font-size="10">Codebook dev → Evaluation</text>
+  <text x="430" y="100" text-anchor="middle" fill="#94a3b8" font-size="10">→ Analysis → Publication</text>
+  
+  <line x1="570" y1="25" x2="570" y2="140" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="710" y="40" text-anchor="middle" fill="#64748b" font-size="10" letter-spacing="2">TEAM</text>
+  <text x="710" y="65" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Cross-functional</text>
+  <text x="710" y="85" text-anchor="middle" fill="#94a3b8" font-size="10">Researchers, developers,</text>
+  <text x="710" y="100" text-anchor="middle" fill="#94a3b8" font-size="10">20 K-12 educators, PI</text>
+  
+  <line x1="850" y1="25" x2="850" y2="140" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="980" y="40" text-anchor="middle" fill="#64748b" font-size="10" letter-spacing="2">METHODS</text>
+  <text x="980" y="65" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">Mixed-Methods</text>
+  <text x="980" y="85" text-anchor="middle" fill="#94a3b8" font-size="10">Pairwise comparison, bootstrapping,</text>
+  <text x="980" y="100" text-anchor="middle" fill="#94a3b8" font-size="10">LDA, thematic coding, interviews</text>
+
+  <!-- Tags -->
+  <rect x="80" y="120" width="90" height="22" rx="11" fill="#134e4a" opacity="0.5"/>
+  <text x="125" y="135" text-anchor="middle" fill="#0d9488" font-size="9">AI Evaluation</text>
+  
+  <rect x="180" y="120" width="100" height="22" rx="11" fill="#134e4a" opacity="0.5"/>
+  <text x="230" y="135" text-anchor="middle" fill="#0d9488" font-size="9">Mixed-Methods</text>
+  
+  <rect x="290" y="120" width="130" height="22" rx="11" fill="#134e4a" opacity="0.5"/>
+  <text x="355" y="135" text-anchor="middle" fill="#0d9488" font-size="9">Human-in-the-Loop</text>
+  
+  <rect x="430" y="120" width="110" height="22" rx="11" fill="#134e4a" opacity="0.5"/>
+  <text x="485" y="135" text-anchor="middle" fill="#0d9488" font-size="9">Annotation Design</text>
+  
+  <rect x="550" y="120" width="90" height="22" rx="11" fill="#134e4a" opacity="0.5"/>
+  <text x="595" y="135" text-anchor="middle" fill="#0d9488" font-size="9">K-12 Education</text>
+  
+  <rect x="650" y="120" width="120" height="22" rx="11" fill="#134e4a" opacity="0.5"/>
+  <text x="710" y="135" text-anchor="middle" fill="#0d9488" font-size="9">Participatory Design</text>
+</svg>

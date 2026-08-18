@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <filter id="sh2">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <rect width="1100" height="480" rx="12" fill="url(#bg2)"/>
+  
+  <text x="550" y="38" text-anchor="middle" fill="#94a3b8" font-size="11" letter-spacing="3">EVALUATION METHODOLOGY</text>
+  
+  <!-- Query Pool -->
+  <rect x="40" y="70" width="180" height="100" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#sh2)"/>
+  <text x="130" y="100" text-anchor="middle" fill="#0d9488" font-size="12" font-weight="bold">QUERY POOL</text>
+  <text x="130" y="122" text-anchor="middle" fill="#cbd5e1" font-size="11">400 unique query sets</text>
+  <text x="130" y="139" text-anchor="middle" fill="#94a3b8" font-size="10">Grade + CCSS Standard</text>
+  <text x="130" y="153" text-anchor="middle" fill="#94a3b8" font-size="10">+ Learning Objectives</text>
+  
+  <!-- Arrow from query pool -->
+  <path d="M220,120 L280,120" stroke="#475569" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  <defs><marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#475569"/></marker></defs>
+  
+  <!-- Three source boxes -->
+  <rect x="290" y="55" width="170" height="55" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="375" y="78" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="bold">Human Designers</text>
+  <text x="375" y="96" text-anchor="middle" fill="#94a3b8" font-size="10">Expert curriculum authors</text>
+  
+  <rect x="290" y="120" width="170" height="55" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="375" y="143" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="bold">Fine-tuned LLaMA-2</text>
+  <text x="375" y="161" text-anchor="middle" fill="#94a3b8" font-size="10">13B, trained on K-12 data</text>
+  
+  <rect x="290" y="185" width="170" height="55" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="375" y="208" text-anchor="middle" fill="#06b6d4" font-size="11" font-weight="bold">Customized GPT-4</text>
+  <text x="375" y="226" text-anchor="middle" fill="#94a3b8" font-size="10">Domain-specific prompts</text>
+  
+  <!-- Arrows from sources to evaluation -->
+  <path d="M460,82 L540,155" stroke="#475569" stroke-width="1" fill="none"/>
+  <path d="M460,147 L540,160" stroke="#475569" stroke-width="1" fill="none"/>
+  <path d="M460,212 L540,170" stroke="#475569" stroke-width="1" fill="none"/>
+  
+  <!-- Evaluation interface -->
+  <rect x="540" y="100" width="220" height="130" rx="8" fill="#1e293b" stroke="#0d9488" stroke-width="2" filter="url(#sh2)"/>
+  <text x="650" y="125" text-anchor="middle" fill="#0d9488" font-size="12" font-weight="bold">BLINDED EVALUATION</text>
+  <text x="650" y="125" text-anchor="middle" fill="#0d9488" font-size="12" font-weight="bold">BLINDED EVALUATION</text>
+  <line x1="560" y1="135" x2="740" y2="135" stroke="#334155" stroke-width="0.5"/>
+  <text x="650" y="155" text-anchor="middle" fill="#cbd5e1" font-size="10">Side-by-side pairs</text>
+  <text x="650" y="172" text-anchor="middle" fill="#cbd5e1" font-size="10">4 measures per pair:</text>
+  <text x="650" y="189" text-anchor="middle" fill="#94a3b8" font-size="10">Warm-up · Main Task</text>
+  <text x="650" y="204" text-anchor="middle" fill="#94a3b8" font-size="10">Cool-down · Overall</text>
+  <text x="650" y="222" text-anchor="middle" fill="#64748b" font-size="9">+ open comment fields</text>
+  
+  <!-- Arrow to analysis -->
+  <path d="M760,165 L830,165" stroke="#475569" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Analysis box -->
+  <rect x="840" y="70" width="220" height="190" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" filter="url(#sh2)"/>
+  <text x="950" y="98" text-anchor="middle" fill="#0d9488" font-size="12" font-weight="bold">ANALYSIS</text>
+  <line x1="860" y1="108" x2="1040" y2="108" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="870" y="132" fill="#f59e0b" font-size="10" font-weight="600">Quantitative</text>
+  <text x="870" y="148" fill="#94a3b8" font-size="10">Bootstrapping (1000×, 95% CI)</text>
+  <text x="870" y="163" fill="#94a3b8" font-size="10">Preference distributions</text>
+  <text x="870" y="178" fill="#94a3b8" font-size="10">Grade-level comparisons</text>
+  
+  <text x="870" y="202" fill="#8b5cf6" font-size="10" font-weight="600">Qualitative</text>
+  <text x="870" y="218" fill="#94a3b8" font-size="10">LDA topic modeling</text>
+  <text x="870" y="233" fill="#94a3b8" font-size="10">Manual thematic coding</text>
+  <text x="870" y="248" fill="#94a3b8" font-size="10">2,979 educator comments</text>
+  
+  <!-- Stats bar -->
+  <rect x="40" y="300" width="1020" height="80" rx="8" fill="#1e293b" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="170" y="330" text-anchor="middle" fill="#0d9488" font-size="28" font-weight="bold">20</text>
+  <text x="170" y="355" text-anchor="middle" fill="#94a3b8" font-size="11">Educators</text>
+  <text x="170" y="370" text-anchor="middle" fill="#64748b" font-size="9">10+ years experience</text>
+  
+  <line x1="300" y1="310" x2="300" y2="375" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="430" y="330" text-anchor="middle" fill="#0d9488" font-size="28" font-weight="bold">529</text>
+  <text x="430" y="355" text-anchor="middle" fill="#94a3b8" font-size="11">Lesson Plan Pairs</text>
+  <text x="430" y="370" text-anchor="middle" fill="#64748b" font-size="9">Across 3 authoring sources</text>
+  
+  <line x1="560" y1="310" x2="560" y2="375" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="690" y="330" text-anchor="middle" fill="#0d9488" font-size="28" font-weight="bold">2,116</text>
+  <text x="690" y="355" text-anchor="middle" fill="#94a3b8" font-size="11">Measure-level Evaluations</text>
+  <text x="690" y="370" text-anchor="middle" fill="#64748b" font-size="9">4 measures × 529 pairs</text>
+  
+  <line x1="820" y1="310" x2="820" y2="375" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="950" y="330" text-anchor="middle" fill="#0d9488" font-size="28" font-weight="bold">2,979</text>
+  <text x="950" y="355" text-anchor="middle" fill="#94a3b8" font-size="11">Qualitative Comments</text>
+  <text x="950" y="370" text-anchor="middle" fill="#64748b" font-size="9">Open-ended feedback</text>
+
+  <!-- Duration label -->
+  <rect x="40" y="410" width="1020" height="50" rx="8" fill="#0f172a" stroke="#334155" stroke-width="0.5"/>
+  <text x="550" y="435" text-anchor="middle" fill="#64748b" font-size="11">5-MONTH EVALUATION PERIOD</text>
+  <text x="550" y="452" text-anchor="middle" fill="#475569" font-size="10">March – July 2024 · Weekly check-ins · Orientation sessions · Pilot training with practice comparisons</text>
+</svg>

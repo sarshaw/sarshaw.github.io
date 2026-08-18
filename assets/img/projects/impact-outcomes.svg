@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 340" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1100" height="340" rx="12" fill="url(#bg5)"/>
+  
+  <text x="550" y="38" text-anchor="middle" fill="#94a3b8" font-size="11" letter-spacing="3">IMPACT &amp; OUTCOMES</text>
+  
+  <!-- Three impact cards -->
+  <!-- Card 1: Product -->
+  <rect x="40" y="65" width="330" height="240" rx="8" fill="#1e293b" stroke="#0d9488" stroke-width="1"/>
+  <rect x="40" y="65" width="330" height="40" rx="8" fill="#134e4a" opacity="0.3"/>
+  <rect x="40" y="95" width="330" height="10" rx="0" fill="#1e293b"/>
+  <text x="205" y="91" text-anchor="middle" fill="#0d9488" font-size="12" font-weight="bold">Product Direction</text>
+  
+  <text x="65" y="130" fill="#cbd5e1" font-size="11">Findings directly shaped the platform's</text>
+  <text x="65" y="148" fill="#cbd5e1" font-size="11">human-AI collaborative design:</text>
+  
+  <circle cx="80" cy="178" r="4" fill="#0d9488"/>
+  <text x="95" y="183" fill="#94a3b8" font-size="10">AI generates structured drafts</text>
+  
+  <circle cx="80" cy="205" r="4" fill="#0d9488"/>
+  <text x="95" y="210" fill="#94a3b8" font-size="10">Humans refine and customize</text>
+  
+  <circle cx="80" cy="232" r="4" fill="#0d9488"/>
+  <text x="95" y="237" fill="#94a3b8" font-size="10">10 quality metrics displayed in real time</text>
+  
+  <circle cx="80" cy="259" r="4" fill="#0d9488"/>
+  <text x="95" y="264" fill="#94a3b8" font-size="10">Grade-level-specific recommendations</text>
+  
+  <!-- Card 2: Technical -->
+  <rect x="390" y="65" width="330" height="240" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+  <rect x="390" y="65" width="330" height="40" rx="8" fill="#4c1d95" opacity="0.15"/>
+  <rect x="390" y="95" width="330" height="10" rx="0" fill="#1e293b"/>
+  <text x="555" y="91" text-anchor="middle" fill="#8b5cf6" font-size="12" font-weight="bold">Technical Outcomes</text>
+  
+  <text x="555" y="135" text-anchor="middle" fill="#8b5cf6" font-size="36" font-weight="bold">88%</text>
+  <text x="555" y="158" text-anchor="middle" fill="#cbd5e1" font-size="11">Automated classifier accuracy</text>
+  <text x="555" y="175" text-anchor="middle" fill="#94a3b8" font-size="10">Multi-task BERT/RoBERTa across 10 metrics</text>
+  
+  <line x1="420" y1="195" x2="690" y2="195" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="555" y="220" text-anchor="middle" fill="#8b5cf6" font-size="20" font-weight="bold">35%</text>
+  <text x="555" y="240" text-anchor="middle" fill="#cbd5e1" font-size="11">Quality improvement</text>
+  <text x="555" y="257" text-anchor="middle" fill="#94a3b8" font-size="10">via structured prompting strategies</text>
+
+  <line x1="420" y1="270" x2="690" y2="270" stroke="#334155" stroke-width="0.5"/>
+  <text x="555" y="293" text-anchor="middle" fill="#94a3b8" font-size="10">Fine-tuned LLaMA-3-8B evaluator for</text>
+  <text x="555" y="308" text-anchor="middle" fill="#94a3b8" font-size="10">interpretable quality explanations</text>
+  
+  <!-- Card 3: Research -->
+  <rect x="740" y="65" width="320" height="240" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+  <rect x="740" y="65" width="320" height="40" rx="8" fill="#78350f" opacity="0.15"/>
+  <rect x="740" y="95" width="320" height="10" rx="0" fill="#1e293b"/>
+  <text x="900" y="91" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="bold">Research Contributions</text>
+  
+  <circle cx="770" cy="130" r="4" fill="#f59e0b"/>
+  <text x="785" y="135" fill="#cbd5e1" font-size="10">arXiv 2025 (under review)</text>
+  
+  <circle cx="770" cy="157" r="4" fill="#f59e0b"/>
+  <text x="785" y="162" fill="#cbd5e1" font-size="10">ICLS 2025 (COALESCE framework)</text>
+  
+  <circle cx="770" cy="184" r="4" fill="#f59e0b"/>
+  <text x="785" y="189" fill="#cbd5e1" font-size="10">SREE 2024 presentation</text>
+  
+  <circle cx="770" cy="211" r="4" fill="#f59e0b"/>
+  <text x="785" y="216" fill="#cbd5e1" font-size="10">AIME-Con 2025 (classroom pilot)</text>
+  
+  <line x1="760" y1="235" x2="1040" y2="235" stroke="#334155" stroke-width="0.5"/>
+  
+  <text x="900" y="260" text-anchor="middle" fill="#f59e0b" font-size="11" font-weight="600">Funding secured</text>
+  <text x="900" y="280" text-anchor="middle" fill="#94a3b8" font-size="10">Co-PI, NSF STTR Phase I</text>
+  <text x="900" y="297" text-anchor="middle" fill="#94a3b8" font-size="10">Co-PI, IES AmplifyGAIN (2024-2029)</text>
+</svg>

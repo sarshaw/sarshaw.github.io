@@ -1,19 +1,45 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract, award and bibtex buttons
-  $("a.abstract").click(function () {
-    $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+  // Toggle abstract / award / bibtex panels (search from the bibliography list item — not .links parent, since panels are siblings of .links-and-badges)
+  function publicationEntryRoot($btn) {
+    var $li = $btn.closest("li");
+    return $li.length ? $li : $btn.closest(".col-sm-12");
+  }
+  $(document).on("click", "a.abstract", function (e) {
+    e.preventDefault();
+    var $root = publicationEntryRoot($(this));
+    $root.find(".abstract.hidden").toggleClass("open");
+    $root.find(".award.hidden.open, .bibtex.hidden.open").removeClass("open");
   });
-  $("a.award").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+  $(document).on("click", "a.award", function (e) {
+    e.preventDefault();
+    var $root = publicationEntryRoot($(this));
+    $root.find(".award.hidden").toggleClass("open");
+    $root.find(".abstract.hidden.open, .bibtex.hidden.open").removeClass("open");
   });
-  $("a.bibtex").click(function () {
-    $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
-    $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
+  $(document).on("click", "a.bibtex", function (e) {
+    e.preventDefault();
+    var $root = publicationEntryRoot($(this));
+    $root.find(".bibtex.hidden").toggleClass("open");
+    $root.find(".abstract.hidden.open, .award.hidden.open").removeClass("open");
+  });
+  // Download BibTeX from the expanded block (button rendered in _layouts/bib.liquid)
+  $(document).on("click", "a.bibtex-download", function (e) {
+    e.preventDefault();
+    var $block = $(this).closest(".bibtex.hidden");
+    var text = $block.find("pre").first().text();
+    if (!text || !text.trim()) {
+      return;
+    }
+    var filename = $(this).attr("data-bib-filename") || "citation.bib";
+    var blob = new Blob([text.replace(/\n$/, "") + "\n"], { type: "text/plain;charset=utf-8" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   });
   $("a").removeClass("waves-effect waves-light");
 

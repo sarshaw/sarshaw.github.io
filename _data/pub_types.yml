@@ -1,22 +1,32 @@
 # Publication types with colors for badges
 "Journal Articles (Peer-Reviewed)":
-  display: "Journal Articles (Peer-Reviewed)"
-  color: "#3B4CCA"
+  display: "Refereed Journal Articles"
+  color: "#6082B6"
   short: "Journal Article"
 
 "Refereed Conference Papers":
   display: "Refereed Conference Papers"
-  color: "#3B4CCA"
+  color: "#7393B3"
   short: "Conference Paper"
 
 "Book Chapters (Peer Reviewed/Invited)":
-  display: "Book Chapters (Peer Reviewed/Invited)"
-  color: "#3B4CCA"
+  display: "Book Chapters"
+  color: "#708090"
   short: "Book Chapter"
 
+"Conference Posters":
+  display: "Refereed Conference Posters"
+  color: "#71797E"
+  short: "Poster"
+
+"Conference Demos":
+  display: "Refereed Conference Demos"
+  color: "#818589"
+  short: "Demo"
+
 "Workshop Papers":
-  display: "Workshop Papers"
-  color: "#9AA4B2"
+  display: "Refereed Workshop Papers"
+  color: "#899499"
   short: "Workshop Paper"
 
 "Extended Abstracts & Non-Archival Conference Papers":
@@ -30,32 +40,26 @@
   short: "Non-Archival Conference Paper"
 
 "Doctoral Consortium Papers":
-  display: "Doctoral Consortium Papers"
+  display: "Doctoral Consortia"
   color: "#9AA4B2"
   short: "Doctoral Consortium Paper"
 
-"Conference Posters":
-  display: "Conference Posters"
-  color: "#9AA4B2"
-  short: "Poster"
-
-"Conference Demos":
-  display: "Conference Demos"
-  color: "#9AA4B2"
-  short: "Demo"
-
 "Technical Reports & White Papers":
   display: "Technical Reports & White Papers"
-  color: "#CED4DA"
+  color: "#B2BEB5"
   short: "Technical Report"
 
 "Patents":
   display: "Patents"
-  color: "#C9A227"
+  color: "#8A9A5B"
   short: "Patent"
-
 
 "Dissertation":
   display: "Dissertation"
-  color: "#C9A227"
+  color: "#8A9A5B"
   short: "Dissertation"
+
+"Preprints":
+  display: "Preprints"
+  color: "#C0C0C0"
+  short: "Preprint"  
